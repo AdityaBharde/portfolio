@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aditya Bharde</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="bg-black text-white font-sans">
+    <!-- Navbar -->
+    <div class="px-5 py-4">
+      <nav class="flex justify-between items-center">
+        <a href="#" class="text-green-500 text-2xl font-bold font-mono border-white border-2 px-2 py-2">Aditya Bharde</a>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-10 ">
+          <li><a href="#" class="hover:text-lime-400">Home</a></li>
+          <li><a href="#" class="hover:text-lime-400">Projects</a></li>
+          <li><a href="#" class="hover:text-lime-400">Services</a></li>
+          <li><a href="#" class="hover:text-lime-400">Contact</a></li>
+          <li>
+            <a href="#" class="bg-black border-2 border-white px-6 py-2 rounded-full hover:bg-lime-500 hover:text-black transition-all">Hire me</a>
+          </li>
+        </ul>
+
+        <!-- Mobile Menu Icon -->
+        <button id="menu-toggle" class="md:hidden"><i class="fa-solid fa-bars text-white text-3xl"></i></button>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <ul id="mobile-menu" class="hidden flex-col space-y-4 mt-4 md:hidden items-center text-center">
+        <li><a href="#" class="hover:text-sky-500">Home</a></li>
+        <li><a href="#" class="hover:text-sky-500">Projects</a></li>
+        <li><a href="#" class="hover:text-sky-500">Services</a></li>
+        <li><a href="#" class="hover:text-sky-500">Contact</a></li>
+        <li>
+          <a href="#" class="bg-blue-500 px-6 py-2 rounded-full border-2 hover:bg-green-700">Hire me</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="text-center py-20 px-4">
+      <h2 class="text-gray-400 text-xl mb-2">Hello, I'm</h2>
+      <h1 class="text-4xl md:text-6xl font-extrabold tracking-wide bg-gradient-to-r from-green-400 via-lime-300 to-emerald-400 bg-clip-text text-transparent drop-shadow-lg">
+        Aditya Bharde
+      </h1>
+      <p class="text-gray-300 mt-4 max-w-xl mx-auto py-4">
+        A passionate developer exploring the world of design, code, and creative possibilities.
+      </p>
+      <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-green-400 via-lime-300 to-emerald-400 group-hover:from-green-500 group-hover:via-lime-400 group-hover:to-emerald-500 focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-500">
+        <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-black rounded-md group-hover:bg-transparent">
+          Download CV
+        </span>
+      </button>      
+      <a href="#connect">
+        <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-green-400 via-lime-300 to-emerald-400 group-hover:from-green-500 group-hover:via-lime-400 group-hover:to-emerald-500 focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-500">
+          <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-black rounded-md group-hover:bg-transparent">
+            Connect with Me
+          </span>
+        </button>
+      </a>
+       
+      <img class="mx-auto w-80 py-5" src="Coding.gif" alt="Coding" />
+    </header>
+    <div class="container mx-auto p-4 pt-6 md:p-6 lg:p-12">
+      <h2 class="text-white-400 text-3xl mb-2 text-center">About ME</h2>
+      <p class="text-gray-300 max-w-xl mx-auto py-4">
+        Hi, I'm Aditya Bharde — a curious mind, a passionate developer, and someone who believes in learning by doing. I'm currently a first-year college student diving deep into the world of tech, with a growing interest in Android development, AI/ML, and innovative solutions for real-world problems.
+      </p>
+    </div>
+    <div id="connect" class="flex flex-col items-center justify-center py-10">
+      <h2 class="text-white-400 text-3xl mb-2 text-center">Let's Build Something Together !!</h2>
+      <h2 class="text-white-400 text-xl mb-6 text-center">Connect Via</h2>
+      <div class="flex gap-x-8 justify-center">
+        <a href="https://github.com/AdityaBharde" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github text-4xl hover:text-green-500 transition-colors duration-300"></i>
+        </a>
+        <a href="https://www.instagram.com/aditya_bharde21/" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-instagram text-4xl hover:text-pink-500 transition-colors duration-300"></i>
+        </a>
+        <a href="https://x.com/adityabharde05" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-x-twitter text-4xl hover:text-blue-500 transition-colors duration-300"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/aditya-bharde-0a297332b/" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin text-4xl hover:text-blue-500 transition-colors duration-300"></i>
+        </a>
+      </div>
+    </div>
+    
+    
+    <!-- Mobile Toggle Script -->
+    <script>
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('mobile-menu');
+
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
